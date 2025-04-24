@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root {
+    --azul-claro: #add8e6;
+    --negro: #121212;
+    --blanco: #ffffff;
+    --azul-oscuro: #2a3f54;
+    --gris-suave: #f5f5f5;
+    --gris-claro: #f1f1f1;
+    --cian: #87c5e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--blanco);
+    color: var(--negro);
+    padding: -50px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 50px;
+    text-align: center;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+}
+
+.imgh1 {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.botones {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: var(--gris-suave);
+    border: none;
+    padding: 14px 24px;
+    margin: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--azul-oscuro);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: var(--cian);
+    transform: scale(1.05);
+}
+
+.previewImg {
+    width: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 3px solid var(--gris-claro);
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.image-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 12px;
+    background: var(--gris-claro);
+    border-radius: 8px;
+    position: relative;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#nombreInput {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--gris-suave);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#imagenInput {
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    background-color: var(--gris-suave);
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#imagenInput:hover {
+    background-color: var(--azul-claro);
+}
